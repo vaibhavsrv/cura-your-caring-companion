@@ -2,8 +2,7 @@ import Navbar from "@/components/cura/Navbar";
 import Hero from "@/components/cura/Hero";
 import Features from "@/components/cura/Features";
 import HowItWorks from "@/components/cura/HowItWorks";
-import Doctors from "@/components/cura/Doctors";
-import Testimonials from "@/components/cura/Testimonials";
+import Privacy from "@/components/cura/Privacy";
 import CTA from "@/components/cura/CTA";
 import Footer from "@/components/cura/Footer";
 
@@ -14,8 +13,7 @@ const Index = () => {
       <Hero />
       <Features />
       <HowItWorks />
-      <Doctors />
-      <Testimonials />
+      <Privacy />
       <CTA />
       <Footer />
     </main>

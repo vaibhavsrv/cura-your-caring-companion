@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Video, MessageCircleHeart, ClipboardList, Pill, Sparkles, Users } from "lucide-react";
+import { Pill, FileText, Share2, ShieldCheck, Clock, Lock } from "lucide-react";
 
 const features = [
-  { icon: Video, title: "Video visits", text: "Talk with a clinician in minutes, not weeks. Same-day slots, every day." },
-  { icon: MessageCircleHeart, title: "Always-on chat", text: "Message your care team between visits — no awkward phone trees." },
-  { icon: ClipboardList, title: "Living care plans", text: "Plans that evolve with you, written in plain language you can act on." },
-  { icon: Pill, title: "Refills made easy", text: "Prescriptions sent to your pharmacy or shipped, free of charge." },
-  { icon: Sparkles, title: "Whole-person care", text: "Mind, body, sleep, hormones — we treat the whole picture." },
-  { icon: Users, title: "Family accounts", text: "Manage care for kids and aging parents in one gentle place." },
+  { icon: Pill, title: "Medicine track record", text: "Log every medicine — past and present. Dosage, frequency, dates. Always at your fingertips." },
+  { icon: FileText, title: "Prescriptions & reports", text: "Snap a photo or upload PDFs. Your full history lives in one private place." },
+  { icon: Share2, title: "Scoped share links", text: "Generate a private link for a doctor or pharmacist. Choose what they see — meds, prescriptions, or both." },
+  { icon: Clock, title: "Expiring access", text: "Every link auto-expires. Revoke anytime with one click. Recipients can never edit anything." },
+  { icon: Lock, title: "Lab reports stay private", text: "Lab results are kept just for you — they're never included in share links." },
+  { icon: ShieldCheck, title: "Yours, always", text: "Your records belong to you. End-to-end access controls, encrypted storage, no ads." },
 ];
 
 const Features = () => {
@@ -15,11 +15,11 @@ const Features = () => {
     <section id="care" className="py-28 relative">
       <div className="container">
         <div className="max-w-2xl mb-16">
-          <span className="text-sm uppercase tracking-[0.2em] text-secondary font-medium">What we do</span>
+          <span className="text-sm uppercase tracking-[0.2em] text-secondary font-medium">What Cura does</span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl font-medium tracking-tight text-balance">
-            A softer kind of healthcare,
+            Your medical history,
             <br />
-            built around <em className="text-primary not-italic">you</em>.
+            organised the way <em className="text-primary not-italic">you</em> want.
           </h2>
         </div>
 
