@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const CTA = () => {
@@ -18,19 +19,21 @@ const CTA = () => {
 
           <div className="relative max-w-2xl mx-auto text-primary-foreground">
             <h2 className="font-display text-4xl md:text-6xl font-medium tracking-tight text-balance">
-              Your first visit is on us.
+              Take back control of your records.
             </h2>
             <p className="mt-6 text-lg opacity-90 leading-relaxed">
-              Try Cura free for 14 days. No card, no commitments — just thoughtful care
-              from a clinician who has time for you.
+              Cura is free to start. No card, no commitments — just your own private medical vault,
+              ready whenever you need to share with a doctor.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-              <Button variant="cream" size="xl" className="group">
-                Start free trial
-                <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+              <Button asChild variant="cream" size="xl" className="group">
+                <Link to="/auth">
+                  Create your vault
+                  <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
-              <Button variant="outlineCream" size="xl">
-                Talk to us first
+              <Button asChild variant="outlineCream" size="xl">
+                <a href="#how">See how it works</a>
               </Button>
             </div>
           </div>
