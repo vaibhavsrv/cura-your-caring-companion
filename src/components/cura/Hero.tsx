@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldCheck, Stethoscope } from "lucide-react";
+import { ArrowRight, ShieldCheck, Lock } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroImg from "@/assets/cura-hero.jpg";
 
 const Hero = () => {
@@ -19,40 +20,41 @@ const Hero = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-background/60 backdrop-blur border border-border/60 text-xs font-medium text-muted-foreground">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
-            Now seeing patients in 12 states
+            Your medical record. Your control.
           </span>
 
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-medium leading-[1.05] tracking-tight text-balance">
-            Care that feels{" "}
-            <span className="italic text-primary">human</span>,
+            Your meds. Your records.{" "}
+            <span className="italic text-primary">Your call</span>
             <br />
-            wherever you are.
+            on who sees them.
           </h1>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Cura connects you with thoughtful clinicians for video visits,
-            ongoing care plans, and gentle follow-ups — all from the comfort
-            of your couch.
+            Cura is your private medical vault. Track every medicine and prescription, then share
+            a scoped, expiring link with any doctor or pharmacist — only what you choose, nothing more.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button variant="warm" size="xl" className="group">
-              Book your first visit
-              <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+            <Button asChild variant="warm" size="xl" className="group">
+              <Link to="/auth">
+                Start your vault
+                <ArrowRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
-            <Button variant="ghostWarm" size="xl">
-              Meet our doctors
+            <Button asChild variant="ghostWarm" size="xl">
+              <a href="#how">See how it works</a>
             </Button>
           </div>
 
           <div className="flex items-center gap-8 pt-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-secondary" />
-              HIPAA compliant
+              Encrypted storage
             </div>
             <div className="flex items-center gap-2">
-              <Stethoscope className="h-4 w-4 text-secondary" />
-              Board-certified
+              <Lock className="h-4 w-4 text-secondary" />
+              You hold the keys
             </div>
           </div>
         </motion.div>
