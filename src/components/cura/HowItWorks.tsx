@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { n: "01", title: "Tell us how you feel", text: "A 2-minute intake — no jargon, no judgment. Share what's going on in your own words." },
-  { n: "02", title: "Meet your clinician", text: "We match you with a doctor who fits your needs and schedule. Hop on a video call when you're ready." },
-  { n: "03", title: "Get a plan, get better", text: "Leave with a clear, kind plan — prescriptions, follow-ups, and a care team in your pocket." },
+  { n: "01", title: "Create your private vault", text: "Sign up in seconds. Your records stay encrypted and visible only to you." },
+  { n: "02", title: "Add medicines & prescriptions", text: "Log meds with dosage and dates. Upload prescription photos and lab reports — all in one place." },
+  { n: "03", title: "Share a scoped link", text: "Generate an expiring link for a doctor or pharmacist. They see only what you choose. Revoke anytime." },
 ];
 
 const HowItWorks = () => {
@@ -14,7 +14,7 @@ const HowItWorks = () => {
         <div className="text-center max-w-2xl mx-auto mb-20">
           <span className="text-sm uppercase tracking-[0.2em] text-secondary font-medium">How it works</span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl font-medium tracking-tight text-balance">
-            Three steps to feeling better.
+            Track. Organise. Share — on your terms.
           </h2>
         </div>
 
