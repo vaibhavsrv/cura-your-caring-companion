@@ -85,8 +85,8 @@ const Hero = () => {
               <Heart />
             </div>
             <div>
-              <div className="text-xs text-muted-foreground">Avg. wait</div>
-              <div className="font-display text-lg">under 4 min</div>
+              <div className="text-xs text-muted-foreground">Share link</div>
+              <div className="font-display text-lg">expires in 24h</div>
             </div>
           </motion.div>
 
@@ -101,8 +101,8 @@ const Hero = () => {
               <div className="w-7 h-7 rounded-full bg-accent/40 border-2 border-background" />
             </div>
             <div>
-              <div className="text-xs text-muted-foreground">Loved by</div>
-              <div className="font-display text-lg">28k+ patients</div>
+              <div className="text-xs text-muted-foreground">Trusted by</div>
+              <div className="font-display text-lg">patients & docs</div>
             </div>
           </motion.div>
         </motion.div>
